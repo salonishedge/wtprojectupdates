@@ -1,0 +1,250 @@
+{% extends "mainpage/main.html" %}
+{%  load static   %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <link href="{% static 'mainpage/css/bootstrap.min.css' %}" rel="stylesheet">   
+  
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="{% static 'mainpage/css/mainpage.css' %}" type="text/css">
+
+  <script src="jquery-3.4.0.min.js"></script>
+
+  <script src="{% static 'mainpage/js/mainpage.js' %}" type="text/javascript">  </script> 
+
+</head>
+<body>
+    
+    
+<div class="image">
+  
+  <!--<img src="{% static 'mainpage/images/main.jpg'%}"> -->
+
+</div>
+
+<div class="container1">
+<p>WELCOME! This is an online Pharmacy Store created by django,HTML,CSS </p>
+</div>
+
+<div id="slider" >
+<figure>
+<img src="{% static 'mainpage/images/ss1.png'%}"> 
+<img src="{% static 'mainpage/images/ss2.png'%}">
+<img src="{% static 'mainpage/images/ss3.png'%}">
+<img src="{% static 'mainpage/images/ss4.png'%}">
+<img src="{% static 'mainpage/images/ss5.png'%}">
+<img src="{% static 'mainpage/images/ss3.png'%}">
+</figure> 
+
+
+</div>
+
+ <style>
+    .wrapper{
+      display:grid;
+      /* grid-template-columns:1fr 1fr 1fr;*/
+      grid-template-columns:repeat(4, 1fr);
+      grid-gap:1em;
+       grid-auto-rows:200px; 
+       grid-auto-columns:10px;
+       grid-auto-rows:minmax(50px, auto);
+       margin:15px;
+       
+      /*grid-auto-rows: minmax(100px, auto); */
+    }
+    .img1{
+      max-height: 300px;
+      max-width: 360px;
+      padding-left: 75px;
+      padding-bottom: 0px;
+    }
+    .p{
+      text-align:center; 
+      color:#3B2F40;
+      font-family: Georgia, serif;
+    }
+    .wrapper2{
+      display:grid;
+      /* grid-template-columns:1fr 1fr 1fr;*/
+      grid-template-columns:repeat(1,);
+      grid-gap:2em;
+       grid-auto-rows:80px; 
+       grid-auto-columns:10px;
+      /*grid-auto-rows: minmax(100px, auto); */
+    }
+
+
+    .nested{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      grid-auto-rows: 70px;
+      grid-gap:1em;
+    }
+
+    .wrapper > div{
+      background:#eee;
+      padding:1em;
+    }
+    .wrapper > div:nth-child(odd){
+      background:#ddd;
+    }
+
+   
+
+.container99{
+  width:100%;
+  margin:15px;
+  overflow:hidden;
+  padding: 0px;
+  margin:5px;
+  background-color:#D2C5E6;
+  /*color:#fff;*/
+  text-align: center;
+  text-decoration: none;
+  
+  /*font-family: Sans-serif, cursive;*/
+  font-family: Georgia, serif;
+font-size: 80px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #44404A;
+font-weight: normal;
+text-decoration: underline solid rgb(68, 68, 68);
+font-style: italic;
+font-variant: small-caps;
+text-transform: none;
+  
+}
+
+  </style>
+</head>
+<body>
+   
+    <div class="container99">
+      <h1 style="font-size: 35px"> Baby Products</h1>
+    </div>
+  
+  <div class="wrapper">
+    <div >
+      <img src="{% static 'mainpage/images/5.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif; font-size: 18px;">Jhonson and Jhonson Baby Wipes(8pc)<br> Rs.172</p>
+    </div>
+    <div >
+      <img src="{% static 'mainpage/images/6.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif;font-size: 18px;">Morisons Baby Milk Powder(1pc)<br>Rs.310</p>
+    </div>
+    <div >
+      <img src="{% static 'mainpage/images/7.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif;font-size: 18px;">Newborn Doublelayerd Hooded Wrap<br>Rs.580</p>
+    </div>
+    <div >
+      <img src="{% static 'mainpage/images/8.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif;font-size: 18px;">Chicco Baby Feeding Bottle(1pc)<br>Rs.285</p>
+    </div>
+    
+  </div>
+
+   <div class="container99">
+      <h1 style="font-size: 35px"> Personal Care</h1>
+    </div>
+  
+  <div class="wrapper">
+    <div >
+      <img src="{% static 'mainpage/images/30.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif; font-size: 18px;">Sebamed Cleansing Bar, 150 g<br> Rs.479</p>
+    </div>
+    <div >
+      <img src="{% static 'mainpage/images/10.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif; font-size: 18px;">Skin Brithining Cream<br>Rs.699</p>
+    </div>
+    <div >
+      <img src="{% static 'mainpage/images/11.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif;font-size: 18px;">Pro-Growth Hair Tonic for better hair growth, 100ml<br>Rs.580</p>
+    </div>
+    <div >
+      <img src="{% static 'mainpage/images/12.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif;font-size: 18px;">India Grooming Club Signature Gift Box<br>Rs.785</p>
+    </div>
+    
+  </div>
+
+   
+
+   <div class="container99">
+      <h1 style="font-size: 35px"> Health and Nutrition</h1>
+    </div>
+  
+  <div class="wrapper">
+    <div >
+      <img src="{% static 'mainpage/images/19.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif; font-size: 18px;">Horlicks Mother's Health & Nutrition Drink - Vanilla Flavour,200 g <br> Rs.555</p>
+    </div>
+    <div >
+      <img src="{% static 'mainpage/images/20.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif;font-size: 18px;">OZiva Plant Based Collagen Builder for Anti-Aging Beauty, 250 g<br>Rs.700</p>
+    </div>
+    <div >
+      <img src="{% static 'mainpage/images/21.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif;font-size: 18px;">Amul Pro Whey Protein -Chocolate, 500 g <br>Rs.599</p>
+    </div>
+    <div >
+      <img src="{% static 'mainpage/images/22.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif;font-size: 18px;">Protinex Health Drink - Tasty Chocolate Flavour, 400 g<br>Rs.400</p>
+    </div>
+  </div>
+
+  <div class="container99">
+      <h1 style="font-size: 35px"> Daibetic Needs</h1>
+    </div>
+  
+  <div class="wrapper">
+    <div >
+      <img src="{% static 'mainpage/images/13.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif; font-size: 18px;">Ensure Diabetes Care Vanilla Sf Jar-400gm<br> Rs.472</p>
+    </div>
+    <div >
+      <img src="{% static 'mainpage/images/14.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif;font-size: 18px;">Steviocal Natural Sweetener - With Zero Calories, 50 g Box<br>Rs.140</p>
+    </div>
+    <div >
+      <img src="{% static 'mainpage/images/15.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif;font-size: 18px;">MEDLIFE Orthopedic & Diabetic Care Footwear<br>Rs.399</p>
+    </div>
+    <div >
+      <img src="{% static 'mainpage/images/16.png'%}"  class="img1">
+      <p style="text-align:center; color:#3B2F40;font-family: Georgia, serif;font-size: 18px;">Sugarless Bliss Sugar Free Ambrosia <br>Rs.285</p>
+    </div>
+    
+  </div>
+    
+    
+    
+    
+  </div>
+
+
+
+
+      
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'mainpage/js/bootstrap.min.js' %}"></script>
+
+
+
+</body>
+</html>
+    
+{% endblock content %}

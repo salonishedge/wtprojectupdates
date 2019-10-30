@@ -1,0 +1,275 @@
+{% extends "mainpage/main.html" %}
+{%  load static   %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PharmaPlus</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!-- .... -->
+
+
+
+
+  </head>
+  <body>
+     
+    
+
+    <style >
+
+      .bg-steel {
+  background-color: #5f788a;
+  padding-bottom:  15px;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+   font-family: monospace;
+
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+      body{
+  /*margin-top:70px;*/
+  font-size:16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:Poppins;
+}
+
+p{
+  font-family:Roboto;
+}
+
+
+#showcase h1{
+  font-size:50px;
+  margin-bottom:20px;
+}
+
+#showcase img{
+  width:90%;
+  margin-left:60px;
+}
+
+#showcase .showcase-right{
+  margin-top:90px;
+}
+
+#testimonial{
+  background:#f1f1f1;
+  /*padding: 50px 0 30px 0;*/
+  text-align:center;
+  margin-top:40px;
+}
+
+#testimonial p{
+  font-size:32px;
+  font-family: 'Josefin Sans';
+  color:#000;
+}
+
+#testimonial p.customer{
+  font-size:20px;
+  color:#666;
+}
+
+#info1 .info-right{
+  margin-top:90px;
+  padding-right: 30px;
+}
+
+#info2{
+  margin:20px 0 60px 0;
+}
+
+#contact{
+  background:url(../img/image3.png);
+  padding:40px;
+  color:#fff;
+  border-top:#333 7px solid;
+  border-bottom:#333 7px solid;
+}
+.info-left{
+  padding-right: 30px;
+}
+
+footer{
+  padding:30px;
+}
+
+.containerabt{
+  background: white;
+}
+
+    </style>
+
+    <section id="showcase">
+      <div class="containerabt">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="showcase-left">
+              <img src="{% static 'mainpage/images/9.jpg'%}">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="showcase-right">
+              <h1>Each Category is a World in Itself!</h1>
+              <p>Here you will find that our products are divided into separate categories for easy navigation as well as increased specificity. These categories include Personal Care, Herbal Care & Ayurveda, Health Care, Food & Nutrition, Sexual Wellness, Diabetic Care, and Medical Supplies & Equipment.</p>
+            </div>
+            <br>
+            <a class="btn btn-default btn-lg showcase-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonial">
+      <div class="container">
+        <p>"Buy Medicines Online from Various Categories at PharmaPlus<br>
+        Within each category, you have the chance to buy medicines online with discounts of up to 20% on all products offered by some of the best brands in the business."</p>
+        <p class="customer"></p>
+      </div>
+    </section>
+
+    <section id="info1">
+      <div class="containerabt">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="info-left">
+              <img src="{% static 'mainpage/images/6.jpg'%}">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="info-right">
+              <h1>PharmaPlus– Your One-Stop Solution to Affordable Health Care Services</h1>
+              <p>buying medicines online is sure to become easier and more convenient than ever. With free home delivery, amazing discounts available within almost all product categories, no minimum order.</p>
+              <br>
+              <a class="btn btn-default btn-lg">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="info2">
+      <div class="containerabt">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="info-left" style="padding-left: 200px;">
+              <h2 >Buy Online</h2>
+              <p><li>Search and select the medicines you want</li>
+                  <li>Upload your prescription at check out</li>
+                  <li>Choose home delivery or store pick up</li></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="info-right">
+              <h2>Click and Pick</h2>
+              <p><li>Search and select the Medicines you want</li>
+                  <li>Select the store where you wish to pick up the order</li>
+                 <li>Show the prescription at the store and collect your medicine</li></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <footer>
+      <p class="text-center">PharmaPlus &copy; 2019</p>
+    </footer>
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.navbar', {
+          duration: 2000,
+          origin:'bottom'
+        });
+        sr.reveal('.showcase-left', {
+          duration: 2000,
+          origin:'top',
+          distance:'300px'
+        });
+        sr.reveal('.showcase-right', {
+          duration: 2000,
+          origin:'right',
+          distance:'300px'
+        });
+        sr.reveal('.showcase-btn', {
+          duration: 2000,
+          delay: 2000,
+          origin:'bottom'
+        });
+        sr.reveal('#testimonial div', {
+          duration: 2000,
+          origin:'bottom'
+        });
+        sr.reveal('.info-left', {
+          duration: 2000,
+          origin:'left',
+          distance:'300px',
+          viewFactor: 0.2
+        });
+        sr.reveal('.info-right', {
+          duration: 2000,
+          origin:'right',
+          distance:'300px',
+          viewFactor: 0.2
+        });
+    </script>
+
+    <script>
+    $(function() {
+      // Smooth Scrolling
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'mainpage/js/bootstrap.min.js' %}"></script>
+
+
+  </body>
+</html>
+{% endblock content %}

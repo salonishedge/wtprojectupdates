@@ -1,0 +1,164 @@
+{% extends "mainpage/main.html" %}
+{%  load static   %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <link href="{% static 'mainpage/css/bootstrap.min.css' %}" rel="stylesheet">   
+  
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="{% static 'mainpage/css/mainpage.css' %}" type="text/css">
+
+  <script src="jquery-3.4.0.min.js"></script>
+
+  <script src="{% static 'mainpage/js/mainpage.js' %}" type="text/javascript">  </script> 
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  margin-top: px;
+  background-image: url("{% static 'mainpage/images/p7.jpg'%}");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("{% static 'mainpage/images/p1.png'%}");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("{% static 'mainpage/images/p9.jpg'%}");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.caption span.border {
+  background-color: white;
+  color: darkblue;
+
+  padding: 35px;
+  font-size: 35px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 25px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a style="font-size:22px;padding-left: 5px;"class="navbar-brand mr-4" href="{% url 'mainpage-hello' %}">Pharmacy Store</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a style="font-size:17px; padding-left: 5px;" class="nav-item nav-link" href="{% url 'mainpage-hello' %}">Home</a>
+              <a style="font-size:17px; padding-left: 15px;" class="nav-item nav-link" href="{% url 'mainpage-about' %}">Order Medicines</a>
+              <a style="font-size:17px; padding-left: 15px;" class="nav-item nav-link" href="{% url 'mainpage-viewproducts' %}">View Products</a>
+              <a style="font-size:17px; padding-left: 15px;" class="nav-item nav-link" href="{% url 'mainpage-aboutus' %}">About Us</a>
+            </div>
+                        <div class="navbar-nav">
+              <a style="font-size:17px; padding-left: 15px;"class="nav-item nav-link" href="{% url 'mainpage-login' %}">Login</a>
+              <a style="font-size:17px; padding-left: 15px;"class="nav-item nav-link" href="{% url 'mainpage-register' %}">Register</a>
+               <a style="font-size:17px; padding-left: 15px"class="nav-item nav-link" href="{% url 'mainpage-cart' %}">Cart</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header> 
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border"><strong>PHARMA PLUS</strong></span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;font-size: 20px">
+  <h3 style="text-align:center;font-size: 25px">ABOUT US</h3>
+  <p>One of the most trusted gateways to medicines and general provision
+
+With an aim to eradicate fake and ineffective medicines, and supply high-quality medicines in India, PharmaPlus was launched in 2006 in Hyderabad. According to WHO research, every 1 or 2 in 10 medicines are proven to be adulterated in low/medium income countries like India and MedPlus aspires to bring about a change in this statistic. To encourage and elevate transparency in the functioning of the pharmaceutical industry, MedPlus has been successfully contributing in providing genuine and unadulterated medicines since its inception.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:35px;color: black;font-size: 25px"><strong>WE OFFER</strong></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:white;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;font-size: 20px">
+  <p>Authentic medicines: Be 100% assured of receiving genuine medicines
+Monthly provisions: One stop store for both medicines as well as monthly provisions (kiraana)
+Quick to-door deliveries: We ensure the delivery of well-packaged products to your doorstep at quick timelines.
+Pocket-friendly: Our range of discounts, offers and deals will allow you to go economical everyday, everytime. We recommend you to explore FlexiRewards, our special saving scheme.</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:30px;color: #f7f7f7;"><strong>CONTACT US</strong></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;font-size:20px">
+  <p><br>
+    We now deliver medicines across 100+ cities and towns, covering 2200+ pin codes in the country!
+Our Diagnostic Test services are available in Mumbai including Thane, Navi Mumbai, Kalyan & Dombivali, </p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">You can also order by calling us on 99929 9929.</span>
+  </div>
+</div>
+
+</body>
+</html>
+{% endblock content %}
